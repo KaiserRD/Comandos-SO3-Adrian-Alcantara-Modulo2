@@ -1,0 +1,58 @@
+Comandos usados practica 1: Gestion de almacenamiento
+sudo dnf update
+sudo dnf repolist
+sudo dnf repolist --all
+sudo dnf search bashtop
+sudo dnf info bashtop
+sudo dnf install bashtop -y
+$ git clone https://github.com/aristocratos/bashtop.git
+sudo dnf install git -y
+$ git clone https://github.com/aristocratos/bashtop.git
+ls
+cd bashtop
+sudo make install
+cd ..
+sudo dnf install make -y
+cd bashtop
+sudo make install
+bashtop
+sudo make uninstall
+sudo rm -r bashtop
+bashtop
+ls
+cd ..
+sudo rm -r bashtop
+ls
+sudo dnf autoremove
+============================================
+
+Comandos usados practica 2: Programacion de tareas
+sudo -i
+crontab -e
+i
+0 23 * * * /usr/bin/dnf update -y
+0 3 * * 0 /sbin/reboot
+:wq
+crontab -l
+ls /tmp
+echo "rm -rf /tmp/*" | at now + 1 minute
+ls /tmp
+============================================
+
+Comandos usados practica 3: Gestion de software del sistema
+sudo -i
+lsblk
+mkfs.ext4 /dev/nvme0n2
+mkdir Escritorio
+mkdir Escritorio/nmve0n2
+mount /dev/nvme0n2 /root/Escritorio/nvme0n2
+cd /root/Escritorio/nvme0n2
+touch AdrianAlcantara.txt
+ls -l
+cd ..
+umount root/Escritorio/nvme0n2
+mount /dev/nvme0n2 /mnt
+cd /mnt
+ls -l
+============================================
+
